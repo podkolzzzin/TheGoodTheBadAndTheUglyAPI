@@ -1,6 +1,14 @@
-﻿namespace TheGoodTheBadAndTheUglyAPI.Clients;
+﻿using TheGoodTheBadAndTheUglyAPI.Clients.Interfaces;
+using TheGoodTheBadAndTheUglyAPI.Models;
 
-public class YouTubeClient
+namespace TheGoodTheBadAndTheUglyAPI.Clients;
+
+public class YouTubeClient : IYouTubeClient
 {
-  
+
+  public Task<IEnumerable<Video>> GetVideosAsync(CancellationToken cancellationToken)
+  {
+    // HttpClient...
+    throw new NotImplementedException();
+  }
 }
